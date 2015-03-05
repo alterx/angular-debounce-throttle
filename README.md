@@ -16,6 +16,34 @@ bower install --save angular-debounce-throttle
 
 ### angular-debounce-throttle()
 
+Add the dependencies to the main js file.
+
+```
+angular.module('sampleApp', ['ngRoute', 'debounceModule', 'throttleModule']);
+```
+
+and inject the required services:
+
+```
+sampleApp.controller('SampleController', ['$scope', '$debounce', '$throttle', SampleController]);
+```
+
+
+#### $debounce service
+
+```
+$scope.onClick = function() {
+	$debounce(callback, 3000, false);
+};
+```
+
+#### $throttle service
+
+```
+$scope.onClick = function() {
+	$throttle(callback, 3000, false, true, false);
+};
+```
 
 ## Testing
 
@@ -43,7 +71,14 @@ To run the tests in Firefox, just once, as CI would:
 npm test
 ```
 
+## TODO
 
-## Browser support
+* Add jsdoc
+* Add grunt
 
-* Google Chrome (latest)
+## Special Thanks 
+
+http://unscriptable.com/2009/03/20/debouncing-javascript-methods/
+http://jsfiddle.net/6K7Kd/68/
+http://underscorejs.org/docs/underscore.html#section-81
+http://underscorejs.org/docs/underscore.html#section-82

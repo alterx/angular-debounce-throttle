@@ -1,0 +1,19 @@
+<h1>Sample debounced click</h1>
+
+<div>
+	<p>
+		As long as you click the button faster than the threshold (3 seconds) counter should stay in zero.
+		Then, after 3 second with no interaction (clicks) counter should increase by exactly one.
+	</p>
+	<button data-ng-click="onClick()">Click me as fast as you can!</button>
+	<p>{{ clicks }}</p>
+</div>
+
+<div>
+	<p>
+		Counter should increase by one immediately, then as long as you click the button faster than the threshold (3 seconds) 
+		counter should stay that way.
+	</p>
+	<button data-ng-click="onClickImmediate()">Click me as fast as you can!</button>
+	<p>{{ clicks2 }}</p>
+</div>

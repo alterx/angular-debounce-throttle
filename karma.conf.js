@@ -16,8 +16,13 @@ module.exports = function (config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'components/chai/chai.js',
-      'angular-debounce-throttle.js',
+      'node_modules/chai/chai.js',
+	  'node_modules/chai-as-promised/lib/chai-as-promised.js',
+	  'bower_components/angularjs/angular.js',
+      'bower_components/angular-route/angular-route.js',
+      'bower_components/angular-mocks/angular-mocks.js',
+      'src/angular-throttle.js',
+	  'src/angular-debounce.js',
       'test/**/*.js'
     ],
 
@@ -33,8 +38,7 @@ module.exports = function (config) {
     // start these browsers
     // CLI --browsers Chrome,Firefox,Safari
     browsers: [
-      'Chrome',
-      'Firefox'
+      'Chrome'
     ],
 
     // if browser does not capture in given timeout [ms], kill it

@@ -9,7 +9,9 @@
     "karma-ie-launcher": "~0.1.1",
     "karma-firefox-launcher": "~0.1.0",
     "karma-phantomjs-launcher": "~0.1.0",
-    "karma-safari-launcher": "~0.1.1"
+    "karma-safari-launcher": "~0.1.1",
+    "chai": "^2.1.1",
+    "chai-as-promised": "^4.2.0"
   },
   "scripts": {
     "test": "./node_modules/.bin/karma start --browsers Firefox --single-run"

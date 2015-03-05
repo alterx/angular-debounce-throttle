@@ -1,0 +1,17 @@
+{
+    "name": "angular-debounce-throttle",
+    "description": "",
+    "version": "0.0.0",
+    "main": "angular-debounce-throttle.js",
+    "ignore": [
+        "test",
+        ".jshintrc",
+        ".travis.yml",
+        "CHANGELOG.md",
+        "karma.conf.js",
+        "package.json"
+    ],
+    "devDependencies": {
+        "chai": "*"
+    }
+}
